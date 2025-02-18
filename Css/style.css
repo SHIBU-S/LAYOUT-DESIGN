@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans", serif;
+}
+.top{
+    font-weight: 400;
+}
+.toplisttitle{
+    font-weight: bolder;
+    color : #067DEA;
+}
+.para{
+    color: #636363;
+    font-size: 14px;
+}
+.viewtoplist{
+    background: #011E4F;
+    border-radius: 50px;
+}
+
+/* ----------------------Carousel------------------- */
+.owl-carousel .item {
+    width: 100%;
+    background: #f8f9fa;
+    text-align: center;
+    border-radius: 10px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;  
+    height: auto;  
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0%;       
+    background: linear-gradient(180deg, rgba(1, 19, 50, 0) 0%, #011332 53.89%);               
+}
+.carousel-sectionflag{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+.email{
+    color: #1CE7E7;
+}
+.carouselpara{
+    font-size: 11px;
+    color: #FFFFFF73;
+    font-weight: 400;
+}
+.seriol-no{
+    position: absolute;
+    top: -4px;
+    left: -4px;
+}
+.like-user {
+   margin-top: -7px;
+   background: #8DF3F3;
+   border-bottom-left-radius: 40px;
+   border-bottom-right-radius: 40px;
+}
+.image-number {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+}
