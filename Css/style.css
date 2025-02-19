@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: "Mona Sans", serif;
 }
-.top{
-    font-weight: 400;
-}
+.top{font-weight: 400;}
 .toplisttitle{
     font-weight: bolder;
     color : #067DEA;
@@ -18,26 +16,67 @@
 .viewtoplist{
     background: #011E4F;
     border-radius: 50px;
+    border-radius: 100px;
 }
+.viewarrow{background: #1CE7E7;}
 
 /* ----------------------Carousel------------------- */
 .owl-carousel .item {
     width: 100%;
-    background: #f8f9fa;
     text-align: center;
     border-radius: 10px;
 }
 .image-container {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     display: inline-block;
 }
+@media (max-width: 576px) {
+    .viewtoplist{
+        width: 360px;
+    }
+    .viewalltoplist{
+        position: absolute;
+        bottom: -245px;
+        width: 100%;
+    }
+    .owl-dots{
+        display: none;
+    }
+    .owl-nav{
+        display: flex;
+    }
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+        width: 33px;
+        border: 1px solid #011332;
+        border-radius: 50%; 
+        font-size: 20px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+    .owl-prev{   position: absolute;
+        top: -90px;
+        right: 40px;}  
+    .owl-next{   position: absolute;
+        top: -90px;
+        right: 0;}
+}
+@media (min-width: 768px)  {
+    .owl-nav{
+        display: none;
+    }
+}
+
 
 .image-container img {
     width: 100%;  
     height: auto;  
     display: block;
 }
-
 .overlay-text {
     position: absolute;
     bottom: 0%;       
@@ -48,13 +87,14 @@
     right: 20px;
     top: 30px;
 }
-.email{
-    color: #1CE7E7;
-}
+.email{color: #1CE7E7;}
+.carousellocation{color: #FFFFFFBF;}
 .carouselpara{
-    font-size: 11px;
-    color: #FFFFFF73;
     font-weight: 400;
+    font-size: 11px;
+    line-height: 12.89px;
+    letter-spacing: -2%;
+    color: #FFFFFF73;
 }
 .seriol-no{
     position: absolute;
@@ -66,6 +106,10 @@
    background: #8DF3F3;
    border-bottom-left-radius: 40px;
    border-bottom-right-radius: 40px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 19px;
+   letter-spacing: -2%;
 }
 .image-number {
     position: absolute;
@@ -77,3 +121,5 @@
     color: white;
     padding: 5px 10px;
 }
+
+
