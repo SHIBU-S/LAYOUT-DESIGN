@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Mona Sans", serif;
+    /* font-family: "Mona Sans", serif; */
 }
 .top{font-weight: 400;}
 .toplisttitle{
@@ -123,3 +123,35 @@
 }
 
 
+
+
+@media (max-width: 320px) {
+    .viewtoplist {
+        width: 280px; /* Adjust width for smaller screens */
+    }
+    .viewalltoplist {
+        bottom: -200px; /* Adjust position */
+    }
+    .owl-nav {
+        display: flex;
+    }
+    .owl-prev {
+        top: -80px;
+        right: 30px;
+    }
+    .owl-next {
+        top: -80px;
+        right: 0;
+    }
+    .carouselpara {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .like-user {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .image-number {
+        font-size: 18px;
+    }
+}
